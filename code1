@@ -1,7 +1,7 @@
-package movie;
+package ticketv2;
 import java.util.Scanner;
 
-public class MovieSelect {
+public class movie2 {
 		//1)get name
 		//2)select Movie
 		//3)select seats 
@@ -18,17 +18,17 @@ public class MovieSelect {
 		String name=scan.nextLine();
 		System.out.println(name);*/
 		getName();
-		
-		
+		getMovie();
+		getSeats();
 	
 	}
 
 	public static void getName() {
 		System.out.println("Please input your Name");
 		name=scan.nextLine();
-		System.out.println("Hello"+name);
+		System.out.println("Hello "+name);
 
-		getMovie();
+		//getMovie();
 	}
 
 	public static void getMovie() {
@@ -37,20 +37,18 @@ public class MovieSelect {
 			System.out.println(movielist[i]);
 		}
 		number=scan.nextInt();
-		System.out.println("You selected the movie"+movielist[number-1].substring(3, movielist[number-1].length()));
+		System.out.println("You selected the movie "+movielist[number-1].substring(3, movielist[number-1].length()));
 
-		getSeats();
+		//getSeats();
 	}
 	
 	public static void getSeats() {
 		
 		System.out.println("Please select how many seats you would like");
 		String seats=scan.next();
-		System.out.println("Thanks you,\nYou selected seats "+seats+"for the movie "+movielist[number-1].substring(3, movielist[number-1].length()));
+		System.out.println("Thanks you,\nYou selected seats "+seats+" for the movie "+movielist[number-1].substring(3, movielist[number-1].length()));
 		
 	}
 
 }
-
-
 
